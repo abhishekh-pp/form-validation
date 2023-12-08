@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+  max-width: 360px;
+  padding: 2rem;
+  background-color: rgb(211, 222, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 2, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formField {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  margin-left: 75px;
+  width: 100px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(64, 64, 64, 0.2),
+    0 6px 20px 0 rgba(117, 117, 117, 0.19);
+}
+
+.message-holder {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  background-color: rgb(193, 230, 193);
+  color: green;
+}
+
+.failed {
+  background-color: rgb(247, 190, 190);
+  color: red;
+}
